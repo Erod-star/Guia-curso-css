@@ -1,0 +1,117 @@
+/* TODO: PASO 2 */
+@font-face {
+  font-family: RubikGlitchCustom;
+  src: url(fonts/RubikGlitch-Regular.ttf);
+}
+
+* {
+  background-color: beige;
+  /* TODO: PASO 2 */
+  /* font-family: RubikGlitchCustom !important; */
+  /* TODO: PASO 3 */
+  /* background-image: url(img/bg-01.jpg);
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: 100%; */
+}
+
+/* TODO: PASO 1 */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  background-color: lightpink;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: condensed;
+}
+
+/* TODO: PASO 2 */
+/* google fonts */
+
+/* TODO: PASO 3 */
+/* Colores del sistema */
+h1 {
+  color: white;
+  background-color: darkcyan;
+  border: 10px solid salmon;
+  padding: 10;
+}
+
+/* Colores del hexadecimales */
+h1 {
+  color: #29a4df;
+  background-color: #2f2d34;
+  border: 15px solid #fff;
+}
+
+/* Colores del RGB */
+h1 {
+  color: rgb(121, 218, 10);
+  background-color: rgb(145, 70, 5);
+  border: 15px solid rgb(88, 34, 34);
+}
+
+/* Colores del RGBA */
+h1 {
+  background-color: rgb(145, 70, 5, 0.5);
+  /* height: 1000px; */
+}
+
+/* TODO: PASO 4 */
+/* Fondos y textos */
+#container {
+  border: 5px solid black;
+  padding: 10px;
+  background: slateblue;
+  color: white;
+}
+
+#content h2 {
+  /* height: 600px; */
+  color: salmon;
+  /* background-image: url(img/95233.jpg); */
+}
+
+#text-container {
+  background-color: lightpink;
+  text-align: left;
+  padding: 20px;
+  line-height: 50px;
+  height: 100px;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  vertical-align: top; /* Remover line-height  */
+  text-indent: 20px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+
+/* TODO: PASO 4 */
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: lightgreen;
+  border: 10px solid saddlebrown;
+  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  padding: 15;
+  text-align: center;
+  /* TODO: PASO 5 */
+  box-shadow: -10px 0px 5px black;
+  box-shadow: 5px 5px 10px gray inset;
+  /* Sombra interiror - box-shadow: 5px 5px 10px gray inset; */
+  /* text-shadow: ; */
+}
+
+/* TODO: PASO 6 */

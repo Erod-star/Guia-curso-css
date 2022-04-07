@@ -1,0 +1,142 @@
+/* 
+TODO: PASO 3
+body {
+  background-color: gray;
+}
+
+h1 {
+  ! Orden de propiedades en una clase CSS
+  color: red;
+  font-size: 50px;
+  text-decoration: underline;
+} */
+
+/* TODO: PASO 4 */
+/* 
+--------- S E L E C T O R E S --------- 
+ */
+
+/* ---------------  Selector universal  ---------------  */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: beige;
+}
+
+/* ---------------  Selector de etiqueta  ---------------  */
+h1 {
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+a {
+  color: green;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* ! Notación de etiqueta dentro de etiqueta */
+footer a {
+  color: pink;
+}
+
+/* ---------------  Selector de id  ---------------  */
+#descripcion {
+  border: 5px solid black;
+  padding: 15px;
+}
+/* ! Las reglas establecidas al final del archivo tienen prioridad 
+! sobre las del comienzo */
+#titulo {
+  background: blue;
+  border: 2px dashed white;
+}
+
+/* ! Aplicar mismos estilos a mútliples selectores */
+/*
+#titulo 
+#descripcion {
+  background: yellow
+  padding: 15px;
+} 
+*/
+
+/* ---------------  Selector de clase  ---------------  */
+/* ! Explicar diferencia entre id y class */
+.parrafo {
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.parrafo3,
+.parrafo2 {
+  background-color: lightgreen;
+  color: gray;
+  padding: 10px;
+}
+
+.parrafo2 {
+  color: black;
+  letter-spacing: 0px;
+}
+
+/* TODO: PASO 5 */
+/* ---------------  Selector de atributo ---------------   */
+#usuario form {
+  border: 5px solid cyan;
+  /* !Explicación margin */
+  /* margin: 15px 0px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+#usuario form * {
+  display: block;
+}
+
+/* Esto es el atributo */
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
+}
+
+input[type="submit"] {
+  background: greenyellow;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* TODO: PASO 6 */
+/* ---------------  Selector hijo ---------------   */
+
+/* #menu a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+} */
+
+#menu > li > ul > li > a {
+  font-size: 18px;
+  color: lightcoral;
+  font-weight: bold;
+}
+
+/* TODO: PASO 7 */
+/* Prioridad */
+
+#mi-nombre h1 {
+  background: black;
+  color: white;
+}
+
+h1 {
+  background: purple;
+}
+
+/* ! Uso del !important  */
