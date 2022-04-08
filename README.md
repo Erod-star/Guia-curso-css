@@ -76,8 +76,8 @@
 
 ...
 
-> Paso 1 - **Animaciones logotipo**
+> Paso 7 - **Animaciones logotipo**
 
-> Paso 2 - **Animaciones banner**
+> Paso 8 - **Animaciones banner**
 
-> Paso 3 - **Animaciones tarjetas**
+> Paso 9 - **Animaciones tarjetas**

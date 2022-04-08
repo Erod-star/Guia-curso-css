@@ -1,0 +1,358 @@
+/* TODO: PASO 1 */
+/* * {
+  background-color: #ccc;
+} */
+
+/* TODO: PASO 3 */
+/* * FUENTES */
+
+@font-face {
+  font-family: "TebuchetMS";
+  src: url(fonts/TrebuchetMS.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url(fonts/BebasNeue.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(fonts/websymbols-regular-webfont.eot);
+  src: url(fonts/websymbols-regular-webfont.eot?#iefix)
+      format("embedded-opentype"),
+    url(fonts/websymbols-regular-webfont.woff) format("woff"),
+    url("fonts/TrebuchetMS.ttf") format("truetype"),
+    url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* * ESTILOS GENERALES */
+/* TODO: PASO 2 */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url("../img/pattern.png");
+}
+
+.wrap {
+  /* Centrar elemento de forma automatica */
+  margin: 0px auto;
+  width: 1250px;
+}
+
+.gear,
+.icon {
+  font-family: "WebSymbolsRegular";
+}
+
+/* TODO: PASO 4 */
+/* HEADER */
+#header {
+  background-color: black;
+  color: white;
+  font-family: "BebasNeue";
+  height: 70px;
+  width: 100%;
+}
+
+#logo {
+  background-color: #37bcf9;
+  cursor: pointer;
+  float: left;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  margin-top: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 300ms;
+  width: 200px;
+}
+
+#logo:hover {
+  background-color: #ccc;
+  border-radius: 2px;
+  color: black;
+}
+
+#logo h3 {
+  display: block;
+  float: right;
+  font-size: 40px;
+  font-size: 40px;
+  margin-right: 65px;
+  margin-top: 5px;
+}
+
+/* TODO: PASO 7 */
+#logo:hover h3 {
+  animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+#logo .gear {
+  /* TODO: PASO 7 */
+  animation-name: rotate-gear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* TODO: ------ */
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 26px;
+}
+
+/* TODO: PASO 7 */
+@keyframes rotate-gear {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#logo:hover .gear {
+  animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* TODO: ------ */
+
+#menu {
+  background: transparent;
+  float: right;
+  height: 70px;
+  margin-right: 5%;
+}
+
+#menu ul li {
+  display: inline-block;
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 70px;
+  margin: 0px 20px 0px 20px;
+}
+
+#menu ul li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  transition: all 300ms;
+}
+
+#menu ul li a:hover {
+  color: #37bcf9;
+  transform: scale(1.2, 1.2);
+}
+
+/* TODO: PASO 5 */
+/* * BANNER */
+#banner {
+  /* TODO: PASO 8 */
+  animation: backBanner 10s linear;
+  /* TODO: ------ */
+  background-position: -200px -200px;
+  background: url("../img/bakbaner.png");
+  border: 10px solid white;
+  box-shadow: 0px 0px 2px gray;
+  height: 100px;
+  margin: 20px auto;
+  overflow: hidden;
+  width: 95.5%;
+}
+
+/* TODO: PASO 8 */
+@keyframes backBanner {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -200px -200px;
+  }
+}
+/* TODO: ------ */
+
+#banner h1 {
+  /* TODO: PASO 8 */
+  animation: showText 10s linear;
+  /* TODO: ------ */
+  color: white;
+  display: block;
+  font-family: "BebasNeue";
+  font-size: 45px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 27px auto;
+  transition: all 300ms;
+  text-align: center;
+  text-shadow: 2px 2px 1px black;
+  width: 850px;
+}
+
+/* TODO: PASO 8 */
+@keyframes showText {
+  0% {
+    transform: translateX(-600%) scale(3, 3);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(600%) scale(3, 3);
+    opacity: 1;
+  }
+  75% {
+    color: transparent;
+    transform: translateX(-600%) scale(3, 3);
+    opacity: 0;
+    text-shadow: none;
+  }
+  100% {
+    color: white;
+    transform: translateX(0%) scale(1, 1);
+    opacity: 1;
+    text-shadow: 2px 2px 1px black;
+  }
+}
+
+#banner h1:hover {
+  color: #37bcf9;
+  cursor: pointer;
+  transform: skew(-0.06turn, 1.5deg);
+}
+/* TODO: ------ */
+
+/*  TODO: PASO 6 */
+/* * CARDS */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 2px #ddd;
+  cursor: pointer;
+  float: left;
+  height: 305px;
+  margin-top: 40px;
+  margin: 22px;
+  overflow: hidden;
+  transition: ease 300ms;
+  width: 205px;
+}
+
+.card:hover {
+  background: black;
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+.card .icon {
+  display: block;
+  font-size: 50px;
+  height: 130px;
+  line-height: 100px;
+  margin: 0px auto;
+  text-align: center;
+  transition: ease 300ms;
+  width: 100%;
+}
+
+/* TODO: PASO 9 */
+.card:hover .icon {
+  animation: showIcon 300ms linear;
+  color: #37bcf9;
+  font-size: 70px;
+}
+
+@keyframes showIcon {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+/* TODO: ------ */
+
+.card .card-category {
+  color: #00538c;
+  font-family: "TebuchetMS";
+  font-size: 21px;
+  font-weight: bold;
+  height: 50px;
+  text-align: center;
+  transition: ease 300ms;
+  width: 100%;
+}
+
+/* TODO: PASO 9 */
+.card:hover .card-category {
+  animation: showCategory 400ms linear;
+  color: white;
+}
+
+@keyframes showCategory {
+  from {
+    color: black;
+    transform: translateY(-300%);
+  }
+  to {
+    color: white;
+    transform: translateY(0%);
+  }
+}
+/* TODO: ------ */
+
+.card .description {
+  color: #0370b9;
+  font-family: "TebuchetMS";
+  font-size: 15px;
+  text-align: center;
+  transition: ease 300ms;
+}
+
+/* TODO: PASO 9 */
+.card:hover .description {
+  animation: showDescription 400ms linear;
+  color: white;
+}
+
+@keyframes showDescription {
+  from {
+    color: black;
+    transform: translateX(-300%);
+  }
+  to {
+    color: white;
+    transform: translateX(0%);
+  }
+}
+/* TODO: ------ */

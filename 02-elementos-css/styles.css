@@ -16,6 +16,7 @@
 }
 
 /* TODO: PASO 1 */
+/* * FUENTES EN CSS */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: oblique;
@@ -36,9 +37,10 @@ p {
 }
 
 /* TODO: PASO 2 */
-/* google fonts */
+/* * GOOGLE FONTS */
 
 /* TODO: PASO 3 */
+/* * COLORES EN CSS */
 /* Colores del sistema */
 h1 {
   color: white;
@@ -68,7 +70,7 @@ h1 {
 }
 
 /* TODO: PASO 4 */
-/* Fondos y textos */
+/* *FONDOS Y TEXTOS */
 #container {
   border: 5px solid black;
   padding: 10px;
@@ -97,6 +99,7 @@ h1 {
 }
 
 /* TODO: PASO 4 */
+/* * CAJAS */
 .card {
   width: 250px;
   height: 250px;
@@ -108,6 +111,7 @@ h1 {
   padding: 15;
   text-align: center;
   /* TODO: PASO 5 */
+  /* * SOMBRAS Y EFECTOS */
   box-shadow: -10px 0px 5px black;
   box-shadow: 5px 5px 10px gray inset;
   /* Sombra interiror - box-shadow: 5px 5px 10px gray inset; */
@@ -115,3 +119,56 @@ h1 {
 }
 
 /* TODO: PASO 6 */
+/* * PSEUDO CLASES */
+ul li:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  color: purple;
+}
+ul li:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+ul li:last-child {
+  font-family: Arial, Helvetica, sans-serif;
+  color: yellowgreen;
+}
+
+#mi-enlace {
+  font-size: 28px;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: ease 300ms;
+}
+
+#mi-enlace:link {
+  color: rebeccapurple;
+}
+
+#mi-enlace:visited {
+  color: pink;
+}
+
+#mi-enlace:hover {
+  color: lightblue;
+  cursor: pointer;
+}
+
+#mi-enlace:active {
+  color: green;
+}
+
+h1:hover {
+  background-color: crimson !important;
+  transition: ease 600ms;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  margin: 15px;
+  padding: 10px;
+}
+
+input[type="text"]:focus {
+  background-color: black;
+  color: white;
+}
